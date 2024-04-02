@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+ 
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-fields">
+      <div class="day enter-age">
+        <h4>Day</h4>
+        <input type="number" name="day" id="day" placeholder="DD" required min="1" max="30">
+        <p class="day-required age-required"></p>
+      </div>
+
+      <div class="month enter-age">
+        <h4>Month</h4>
+        <input type="number" name="month" id="month" placeholder="MM" required min="1" max="12">
+        <p class="month-required age-required"></p>
+      </div>
+
+      <div class="year enter-age">
+        <h4>Year</h4>
+        <input type="number" name="year" id="year" placeholder="YY" required>
+        <p class="year-required age-required"></p>
+      </div>
+
+    </div>
+<div class="button">
+  <img src="assets/images/icon-arrow.svg" class="btn">
+</div>
+
+    <div class="age-block">
+      <div class="age-display">
+        <span class="year-old">--</span>
+        <h1>years</h1>
+      </div>
+      <div class="age-display">
+        <span class="months-old">--</span>
+        <h1>months</h1>
+      </div>
+      <div class="age-display">
+        <span class="days-old">--</span>
+        <h1>days</h1>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
